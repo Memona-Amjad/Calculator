@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1>Calculator</h1>
+    <main class="main-section">
+        <div class="input-div">
+            <input  type="text" name="input" class="input" disabled/>
+            <input type="text" class="result" placeholder="result" disabled>
+
+
+        </div>
+        <div class="btn-div">
+            <div class="first-div">
+                <button onclick="handleclick(this)" class="seven">7</button>
+                <button  onclick="handleclick(this)"  class="eigth">8</button>
+                <button onclick="handleclick(this)"  class="nine">9</button>
+                <button onclick="handleclick(this)"  class="multiply">*</button>
+            </div>
+             <div class="second-div first-div">
+                <button onclick="handleclick(this)"  class="four">4</button>
+                <button onclick="handleclick(this)"  class="five">5</button>
+                <button onclick="handleclick(this)"  class="six">6</button>
+                <button onclick="handleclick(this)"  class="minus">-</button>
+            </div>
+             <div class="third-div first-div">
+                <button onclick="handleclick(this)"  class="one">1</button>
+                <button onclick="handleclick(this)"  class="two">2</button>
+                <button onclick="handleclick(this)"  class="three">3</button>
+                <button onclick="handleclick(this)"  class="plus">+</button>
+            </div>
+            <div class="forth-div first-div">
+                <button onclick="handleclick(this)"  class="zero">0</button>
+                <button class="equal"  onclick="finalResult()">=</button>
+                <button onclick="clear()" class="clear">Clear</button>
+                <button onclick="handleclick(this)"  class="divide">/</button>
+            </div>
+             
+        </div>
+    </main>
+</body>
+
+</html>
